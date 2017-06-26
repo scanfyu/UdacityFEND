@@ -12,7 +12,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 0; 
+  margin: 0;
 }
 
 header, nav, footer, section, article, div {
@@ -29,7 +29,7 @@ ul {
 /*
  *
  * Common
- * 
+ *
  */
 
 .news__more {
@@ -223,7 +223,7 @@ main {
 
 .scores__table th,
 .scores__table td {
-  padding: 1em; 
+  padding: 1em;
 }
 
 .scores__table th {
@@ -366,4 +366,39 @@ footer a {
   text-decoration: none;
   color: #333;
   padding: 1.5em;
+}
+
+
+/*
+*
+*响应式
+*
+*/
+@media screen and (min-width: 500px) {
+  .hero {
+    order: 0;
+    width: 60%;
+  }
+  .weather {
+    order: 1;
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero {
+    width: 50%;
+  }
+  .top-news {
+    order: 1;
+    width: 50%;
+  }
+  .scores {
+    order: 2;
+    width: 60%;
+  }
+  .weather {
+    order: 3;
+    width: 40%;
+  }
 }
